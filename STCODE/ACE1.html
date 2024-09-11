@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Austrian Technical College</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            background-color: #111; /* Dark background */
+            color: #fff; /* White text for contrast */
+            line-height: 1.6;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(8, 8, 8, 0.7), rgba(0, 0, 0, 0.9)), 
+                        url('pim1.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Navigation bar */
+        .nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero text */
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            overflow: hidden;
+        }
+
+        .hero-text span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-text h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 2px;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 40px;
+            background-color: #222;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        main p {
+            margin-bottom: 20px;
+        }
+
+        /* Scroll cue */
+        .scroll-cue {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5em;
+            animation: bounce 2s infinite;
+            color: #fff;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2em;
+            }
+            
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <img src="al1.png" alt="School Logo">
+            </div>
+            <div>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE1.html">HOMEPAGE</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE2.html">IDENTITY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE3.html">PHILOSOPHY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE4.html">PRONOUNCED</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE5.html">MADE BY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE6.html">Form</a>
+            </div>
+        </div>
+
+        <div class="hero-text" id="hero-text">
+            <h1>thai austrian <br>technical college</h1>
+        </div>
+
+        <div class="scroll-cue">
+            &#8595;
+        </div>
+    </div>
+
+    <main>
+        <h1>ประวัติความเป็นมา</h1>
+        <h4>ที่ตั้ง</h4>
+        <p>เลขที่ 193 หมู่ 3 ถนนสุขุมวิท ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี มีเนื้อที่ 64 ไร่ 3 งาน 20 ตารางวา</p>
+        
+        <h4>การจัดตั้ง</h4>
+        <p>วิทยาลัยเทคนิคสัตหีบ สังกัดกองวิทยาลัยเทคนิค กรมอาชีวศึกษา กระทรวงศึกษาธิการ ได้จัดตั้งขึ้นตามข้อตกลงระหว่างรัฐบาลไทยกับรัฐบาลสาธารณรัฐออสเตรีย โดยรัฐบาลสาธารณรัฐออสเตรีย เสนอให้ความช่วยเหลือด้าน...</p>
+        
+        <h4>วัตถุประสงค์</h4>
+        <p>1. เพื่อผลิตช่างเทคนิคให้สอดคล้องกับความต้องการของสถานประกอบการ</p>
+        <p>2. เพื่อให้นักเรียนนัก-ศึกษา เกิดทักษะตรงกับมาตราฐานช่างเทคนิค และสถานประกอบการ</p>
+        <p>3. เพื่อพัฒนาแผนการเรียนการสอนกับช่างอุตสาหกรรมให้สอดคล้องกับการพัฒนา ในภาคตะวันออก</p>
+
+        <h4>ประวัติสถานศึกษา</h4>
+        <p>วิทยาลัยเทคนิคสัตหีบก่อตั้งเมื่อวันที่ 1 กันยายน พ.ศ. 2512 ภายใต้ความร่วมมือระหว่างรัฐบาลไทยและรัฐบาลสาธารณรัฐออสเตรียในสมัยนั้น โดยใช้ชื่อภาษาอังกฤษว่า Thai-Austrian Technical School และชื่อภาษาไทยว่า</p>
+        <p>โรงเรียนเทคนิคสัตหีบ ณ บ้านอำเภอ ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี บนพื้นที่ทั้งหมด 64 ไร่ 3 งาน 20 ตารางวา โดยประเทศไทยจัดหาสถานที่และก่อสร้างอาคารเรียนและอาคารฝึกงาน ในขณะที่รัฐบาลสาธารณรัฐออสเตรีย</p>
+        <p>สนับสนุนด้านเครื่องมือเครื่องจักร ส่งผู้เชี่ยวชาญเข้ามาช่วยฝึกอบรมการใช้เครื่องมือเครื่องจักรในการจัดเรียนการสอนให้กับครูและนักเรียน รวมถึงให้ทุนฝึกอบรมครูไทยที่ประเทศออสเตรีย</p>
+        <p>วันที่ 11 ตุลาคม พ.ศ. 2520 กรมอาชีวศึกษาได้จัดพิธีรับมอบอุปกรณ์ให้กับโรงเรียนเทคนิคสัตหีบอย่างเป็นทางการ โดย Mr.Kari Peterlik เอกอัครราชทูตออสเตรียประจำประเทศไทย ผู้แทนรัฐบาลสาธารณรัฐออสเตรียเป็นผู้มอบ และนายภิญโญ สาธร รัฐมนตรีกระทรวงศึกษาธิการในขณะนั้นเป็นผู้แทนรัฐบาลไทยในการรับมอบ</p>
+        <p>วันที่ 2 สิงหาคม พ.ศ. 2522 กระทรวงศึกษาธิการประกาศยกระดับสถานศึกษาจากโรงเรียนเทคนิคสัตหีบเป็นวิทยาลัยเทคนิคสัตหีบ โดยใช้ชื่อภาษาอังกฤษว่า Thai - Austrian Technical College (TATC)</p>
+        <p>วันที่ 12 กุมภาพันธ์ พ.ศ. 2533 ได้มีการลงนามในบันทึกข้อตกลงระหว่าง Mr.Hoch Lenitner ผู้แทนระดับสูงของรัฐบาลสาธารณรัฐออสเตรีย ร่วมกับนายบุญเทียม เจริญยิ่ง อธิบดีกรมอาชีวศึกษาและผู้แทนรัฐบาลไทย เพื่อสานต่อวิทยาลัยฯ ในโครงการให้ความช่วยเหลือ โดยมี พล.อ. Dr.Alois Mock รัฐมนตรีว่าการกระทรวงต่างประเทศของออสเตรียร่วมเป็นสักขีพยาน        </p>
+        <p>โครงการนี้แบ่งการจัดส่งเครื่องจักรอุปกรณ์ออกเป็น 4 ระยะ ดังนี้:</p>
+        <p>ระยะที่ 1: เดือนสิงหาคม พ.ศ. 2533 จัดส่งอะไหล่และอุปกรณ์บางอย่างเพื่อซ่อมเครื่องจักรอุปกรณ์เดิมที่ชำรุด และเพิ่มเติมอุปกรณ์และเครื่องจักร คิดเป็นเงิน 2,477,450.62 บาท และวันที่ 19 พฤศจิกายน พ.ศ. 2533 มอบเงินจำนวน 991,872.52 บาท ให้วิทยาลัยฯ ดำเนินการซื้อเครื่องจักรอุปกรณ์ภายในประเทศ</p>
+        <p>ระยะที่ 2: เดือนกุมภาพันธ์ พ.ศ. 2534 จัดส่งอะไหล่และอุปกรณ์เพิ่มเติม คิดเป็นเงิน 8,335,934.74 บาท</p>
+        <p>ระยะที่ 3: เดือนพฤษภาคม พ.ศ. 2536 จัดส่งเครื่องจักรอุปกรณ์ที่ทันสมัย คิดเป็นเงิน 8,335,160.66 บาท และส่งผู้เชี่ยวชาญจำนวน 4 คน มาติดตั้งอุปกรณ์และแนะนำการใช้</p>
+        <p>ระยะที่ 4: เดือนกันยายน พ.ศ. 2536 จัดส่งเครื่องจักรอุปกรณ์ที่ทันสมัยเพิ่มเติม และส่งผู้เชี่ยวชาญมาปฏิบัติหน้าที่อีก 5-6 คน</p>
+        <p>ในปี พ.ศ. 2539 วิทยาลัยเทคนิคสัตหีบได้รับเลือกให้เป็นสถานศึกษาดีเด่น นายสรอรรถ กลิ่นประทุม รัฐมนตรีว่าการกระทรวงศึกษาธิการในขณะนั้นได้มอบโล่รางวัลดีเด่นให้แก่วิทยาลัยฯ</p>
+        <p>ในปี พ.ศ. 2548 วิทยาลัยฯ ได้รับการยกย่องให้เป็นสถานศึกษาอาชีวะต้นแบบ (Super Model) แห่งเดียวในประเภทวิทยาลัยเทคนิคของสำนักงานคณะกรรมการการอาชีวศึกษา</p>
+        <p>ในปี พ.ศ. 2551 วิทยาลัยฯ ได้รับเลือกจากกระทรวงศึกษาธิการให้เป็นสถานศึกษาดีเด่น รางวัลพระราชทานระดับอาชีวศึกษา โดยสมเด็จพระเทพรัตนราชสุดาสยามบรมราชกุมารีมอบโล่รางวัลดีเด่นให้กับวิทยาลัยฯ</p>
+        <p>ในปี พ.ศ. 2563 วิทยาลัยฯ ได้จัดการเรียนการสอนในหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาวิชาช่างอากาศยาน เพื่อผลิตและพัฒนากำลังคนด้านอุตสาหกรรมการบินรองรับการพัฒนาระเบียงเศรษฐกิจพิเศษภาคตะวันออก EEC</p>
+        <p>พ.ศ. 2564 จากความร่วมมือของภาคีเครือข่าย วิทยาลัยฯ ได้รับคัดเลือกให้เป็นศูนย์ความเป็นเลิศทางการอาชีวศึกษา (Excellent Center) ใน 3 สาขาวิชา ได้แก่ เมคคาทรอนิกส์และหุ่นยนต์ เทคนิคควบคุมและซ่อมบำรุงระบบขนส่งทางราง และช่างอากาศยาน</p>
+        <p>ในปี พ.ศ. 2565 วิทยาลัยฯ ได้รับการประเมินให้เป็นศูนย์ทดสอบมาตรฐานฝีมือแรงงานในสาขาอาชีพช่างเชื่อมอาร์กโลหะด้วยมือ ระดับ 1, ช่างเชื่อมทิก ระดับ 1, และช่างเชื่อมแม็ก ระดับ 1</p>
+        <p>ในวันที่ 14 พฤศจิกายน 2565 ดร.อรทัย โยธินรุ่งเรือง สุดสงวน ผู้อำนวยการวิทยาลัยฯ เข้าร่วมประชุมคณะทำงานร่วม (Joint Working Group) ด้านอาชีวศึกษาระหว่างกระทรวงศึกษาธิการแห่งราชอาณาจักรไทยและกระทรวงแรงงานและเศรษฐกิจแห่งสาธารณรัฐออสเตรีย ณ ห้องประชุมราชวัลลภ กระทรวงศึกษาธิการ กรุงเทพมหานคร</p>
+        <p>ในวันที่ 14 กุมภาพันธ์ 2566 วิทยาลัยเทคนิคสัตหีบยังได้รับคัดเลือกเป็นศูนย์บริหารเครือข่ายการผลิตและพัฒนากำลังคนอาชีวศึกษา (Center of Vocational Manpower Networking Management: CVM) ในสาขาวิชาเครื่องมือวัดและควบคุม เพื่อเป็นศูนย์กลางในการผลิตและพัฒนากำลังคนที่มีสมรรถนะสูงตรงตามความต้องการของพื้นที่เศรษฐกิจพิเศษภาคตะวันออกและความต้องการกำลังคนของประเทศ</p>
+
+    </main>
+
+    <script>
+        // JavaScript to wrap each word in a span for animation
+        function wrapWords() {
+            const heroText = document.getElementById('hero-text');
+            const words = heroText.innerHTML.split(' ').map(word => `<span>${word}</span>`).join(' ');
+
+            heroText.innerHTML = words;
+            const spans = heroText.querySelectorAll('span');
+            
+            spans.forEach((span, index) => {
+                span.style.animationDelay = `${index * 0.1}s`; // Stagger the animation
+            });
+        }
+
+        window.onload = wrapWords;
+    </script>
+</body>
+</html>

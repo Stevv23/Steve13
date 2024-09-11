@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Austrian Technical Institute</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Verdana', sans-serif;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            background-color: #1c1c1c; /* Darker background for better contrast */
+            color: #f0f0f0; /* Softer white for text */
+            line-height: 1.8;
+        }
+
+        /* Full-screen header section */
+        .header {
+            height: 100vh;
+            background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('pim1.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation menu */
+        .navigation {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .navigation a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffcc00; /* Gold color for a premium feel */
+            transform: translateY(-3px); /* Subtle lift effect */
+        }
+
+        .brand img {
+            height: 60px; /* Adjusted height */
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .brand img:hover {
+            transform: scale(1.1); /* Slightly stronger zoom effect on hover */
+        }
+
+        /* Header text */
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .header-text span {
+            display: inline-block;
+            opacity: 0; /* Hidden text at start */
+            transform: translateY(20px); /* Text starts slightly below */
+            animation: slideUp 0.7s forwards; /* Adjusted animation */
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+
+        .header-text h1 {
+            font-size: 3.5em; /* Larger, more prominent heading */
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 3px;
+        }
+
+        main {
+            padding: 60px;
+            background-color: #2c2c2c; /* Darker, more polished background */
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 40px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); 
+            animation: slideIn 1.2s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        main p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5em; /* Larger indicator for scrolling */
+            animation: floating 1.5s infinite;
+            color: #f0f0f0; 
+        }
+
+        @keyframes floating {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-text h1 {
+                font-size: 2.5em;
+            }
+            
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navigation">
+            <div class="brand">
+                <img src="al1.png" alt="Institute Logo">
+            </div>
+            <div>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE1.html">HOMEPAGE</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE2.html">IDENTITY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE3.html">PHILOSOPHY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE4.html">PRONOUNCED</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE5.html">MADE BY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE6.html">Form</a>
+            </div>
+        </div>
+
+        <div class="header-text" id="header-text">
+            <h1>THANK FOR VISIT US <br>HOPE YOU ENJOY</h1>
+        </div>
+
+        <div class="scroll-indicator">
+            &#8595;
+        </div>
+    </div>
+    
+    <main>
+        <h2>ฟอร์มกรอกข้อมูลผู้ใช้งาน</h2>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend><strong>ข้อมูลส่วนตัว</strong></legend>
+                <label for="fullname">ชื่อ-นามสกุล:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">อีเมล:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">เบอร์โทรศัพท์:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="address">ที่อยู่:</label><br>
+                <input type="text" id="address" name="address"><br><br>
+
+                <label for="dob">วัน/เดือน/ปี เกิด:</label><br>
+                <input type="date" id="dob" name="dob"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>ข้อมูลการเข้าสู่ระบบ</strong></legend>
+                <label for="username">ชื่อผู้ใช้งาน (Username):</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">รหัสผ่าน:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="confirm-password">ยืนยันรหัสผ่าน:</label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>ข้อมูลอื่นๆ</strong></legend>
+                <label>เพศ:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">ชาย</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label><br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">ไม่ระบุ</label><br><br>
+
+                
+            </fieldset>
+
+            <fieldset>
+                <label for="agreement">ข้อตกลงและเงื่อนไข:</label><br>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">ยอมรับเงื่อนไขและนโยบายความเป็นส่วนตัว</label><br><br>
+            </fieldset>
+
+            <input type="submit" value="ยืนยันข้อมูล">
+        </form>
+    </main>
+
+
+    <script>
+        // JavaScript to animate each word
+        function animateWords() {
+            const headerText = document.getElementById('header-text');
+            const words = headerText.innerHTML.split(' ').map(word => `<span>${word}</span>`).join(' ');
+
+            headerText.innerHTML = words;
+            const spans = headerText.querySelectorAll('span');
+            
+            spans.forEach((span, index) => {
+                span.style.animationDelay = `${index * 0.15}s`; // Adjusted delay for animation
+            });
+        }
+
+        window.onload = animateWords;
+    </script>
+</body>
+</html>

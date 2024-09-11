@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Austrian Technical Institute</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Verdana', sans-serif;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            line-height: 1.8;
+        }
+
+        /* Full-screen header section */
+        .header {
+            height: 100vh;
+            background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('pim1.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation menu */
+        .navigation {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .navigation a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffcc00;
+            transform: translateY(-3px);
+        }
+
+        .brand img {
+            height: 60px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .brand img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Header text */
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .header-text span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.7s forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-text h1 {
+            font-size: 5vw;
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 3px;
+        }
+
+        main {
+            padding: 40px;
+            background-color: #2c2c2c;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 40px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+            animation: slideIn 1.2s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        main img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5em;
+            animation: floating 1.5s infinite;
+            color: #f0f0f0;
+        }
+
+        @keyframes floating {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: #f0f0f0;
+            background-color: #333;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #555;
+        }
+
+        .scroll-to-top::before {
+            content: '▲';
+            font-size: 1.5em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-text h1 {
+                font-size: 7vw;
+            }
+
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navigation">
+            <div class="brand">
+                <img src="al1.png" alt="Institute Logo">
+            </div>
+            <div>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE1.html">HOMEPAGE</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE2.html">IDENTITY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE3.html">PHILOSOPHY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE4.html">PRONOUNCED</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE5.html">MADE BY</a>
+                <a href="file:///C:/Users/chink/Downloads/STEVE/STCODE/ACE6.html">Form</a>
+            </div>
+        </div>
+
+        <div class="header-text" id="header-text">
+            <h1>THANK YOU FOR VISITING US <br>HOPE YOU ENJOY</h1>
+        </div>
+
+        <div class="scroll-indicator">
+            &#8595;
+        </div>
+    </div>
+
+    <main>
+        <img src="JOIN.gif" alt="Description of the image">
+        <h1>My Work</h1>
+        <img src="LINK.png" alt="Work 1">
+        <img src="Gat.png" alt="Work 2">
+        <img src="ZXC.png" alt="Work 3">
+        <img src="ZXC2.png" alt="Work 4">
+        <img src="ZXC3.png" alt="Work 5">
+        <img src="ZC1.png" alt="Work 6">
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()"></button>
+
+    <script>
+        // JavaScript to animate each word
+        function animateWords() {
+            const headerText = document.getElementById('header-text');
+            const words = headerText.innerHTML.split(' ').map(word => `<span>${word}</span>`).join(' ');
+
+            headerText.innerHTML = words;
+            const spans = headerText.querySelectorAll('span');
+
+            spans.forEach((span, index) => {
+                span.style.animationDelay = `${index * 0.15}s`;
+            });
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onload = animateWords;
+    </script>
+</body>
+</html>
